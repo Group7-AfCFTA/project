@@ -1,0 +1,85 @@
+<html>
+<head>
+<title>login Page</title>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+
+
+<link rel="stylesheet" href="loginstyle.css">
+<script src="java.js"></script>
+
+</head>
+<body>
+
+<html>
+<head>
+    <script
+      defer
+             src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"
+    ></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Log and Registration Form</title>
+</head>
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="register()" >Register</button>
+            </div>
+            <div class="social-icons">
+            
+            <span class="tw">
+              <img src="https://i.postimg.cc/fLRSQ3Vv/tw.png" height="30px" width="30px" style="border-radius: 15px;">
+           </span>
+    <span class="fb">
+             <img src="https://i.postimg.cc/fLPy48nw/fb.png" height="30px" width="30px" style="border-radius: 15px;">
+           </span>
+          <span class="gp">
+              <img src="https://i.postimg.cc/Cx4jypvS/gp.png" height="30px" width="30px" style="border-radius: 15px;">
+           </span>             
+           
+
+        </div>
+            <form id="login" class="input-group">
+            <input id="user id" type="text" class="input-field" placeholder="User Id" required>
+            <input id="password id" type="text" class="input-field" placeholder="Enter Password" required>
+            <input type="checkbox" class="check-box"><span>Remember Password</span>
+            <button onclick="login()" type="submit" class="submit-btn">Log In</button> 
+            
+            </form>
+            
+            <form id="register" class="input-group">
+            <input id="user" type="text" class="input-field" placeholder="User Id" required>
+            <input id="email" type="email" class="input-field" placeholder="Email Id" required> 
+            <input id="password" type="text" class="input-field" placeholder="Enter Password" required>
+            <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
+            <button onclick="regis()" type="submit" class="submit-btn">Register</button>
+            
+            </form>
+         </div>
+        
+    </div>
+<script>
+
+	    var x = document.getElementById("login");
+    var y = document.getElementById("register");
+    var z = document.getElementById("btn");
+    
+    function register(){
+        x.style.left = "-400px";
+        y.style.left = "50px";
+        z.style.left = "110px";
+    }
+    function login(){
+        x.style.left = "50px";
+        y.style.left = "450px";
+        z.style.left = "0px";
+    }
+</script> 
+</body>
+</html>
+
+</html>
